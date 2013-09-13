@@ -4,9 +4,6 @@
 	<param name="robot_description" textfile="$(arg model)" />
 	<param name="use_gui" value="$(arg gui)"/>
 
-	<node name="waist_pose_publisher" pkg="robot_waist_pose_publisher" type="waist_pose_publisher" >
-		<env name="ROS_NAMESPACE" value="/dynamic_graph"/>
-	</node>
 	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" >
 		<env name="ROS_NAMESPACE" value="/dynamic_graph"/>
 	</node>
